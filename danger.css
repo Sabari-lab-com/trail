@@ -32,3 +32,48 @@ body,.container {
     80%  { background: cyan; }
     100% { background: white; }
 }
+
+
+
+.div {
+    background: #000 !important;
+    color: #00ff00 !important;
+    font-family: "Courier New", monospace !important;
+    font-size: 18px !important;
+    text-shadow: 0 0 5px #00ff00,
+                 0 0 10px #00ff00;
+    overflow: hidden;
+    position: relative;
+    min-height: 300px;
+}
+
+.div::before {
+    content:
+    "YOUR DEVICE HAS BEEN HACKED\a\a"
+    "INITIALIZING...\a"
+    "ACCESS GRANTED\a"
+    "DOWNLOADING DATA...\a"
+    "0x4A8F 0x7B2C 0x9D11\a"
+    "SYSTEM OVERRIDE\a"
+    "ENCRYPTION BYPASSED\a"
+    "ROOT ACCESS ENABLED\a"
+    "ZX91A 5F22D 7C11E\a"
+    "SCANNING FILES...\a"
+    "█████████████████████";
+    
+    white-space: pre-line;
+    position: absolute;
+    left: 20px;
+    bottom: -100%;
+    width: calc(100% - 40px);
+    animation: hackerScroll 10s linear infinite;
+}
+
+@keyframes hackerScroll {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-300%);
+    }
+}
