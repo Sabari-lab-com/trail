@@ -1,4 +1,4 @@
-body,.container {
+.blink {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -15,7 +15,7 @@ body,.container {
     100% { background: white; }
 }
 
-.container,div,nav,header {
+.blink {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -35,7 +35,7 @@ body,.container {
 
 
 
-.div {
+.hack {
     background: #000 !important;
     color: #00ff00 !important;
     font-family: "Courier New", monospace !important;
@@ -47,7 +47,7 @@ body,.container {
     min-height: 300px;
 }
 
-.div::before {
+.hack::before {
     content:
     "YOUR DEVICE HAS BEEN HACKED\a\a"
     "INITIALIZING...\a"
