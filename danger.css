@@ -1,24 +1,20 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+
 #error {
     position: absolute;
     height: 100%;
     width: 100%;
+    z-index: 100;
     animation: glitchScreen 0.1s infinite;
 }
 
-@keyframes glitchScreen {
-    0%   { background: red; }
-    16%  { background: lime; }
-    32%  { background: blue; }
-    48%  { background: yellow; }
-    64%  { background: magenta; }
-    80%  { background: cyan; }
-    100% { background: white; }
-}
-
 #error {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    inset: 0;
     z-index: 100;
     animation: glitchScreen 0.1s infinite;
 }
