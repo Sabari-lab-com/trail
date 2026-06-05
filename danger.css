@@ -1,11 +1,39 @@
-*{
-    display: none;
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    animation: screen-fault 5s infinite;
 }
 
-html{
-    display: none;
-}
+@keyframes screen-fault {
+    0%, 94% {
+        opacity: 0;
+    }
 
-body{
-    display: none;
+    95% {
+        opacity: 1;
+        background: #ff0000;
+    }
+
+    96% {
+        background: #00ff00;
+    }
+
+    97% {
+        background: #0000ff;
+    }
+
+    98% {
+        background: #ffffff;
+    }
+
+    99% {
+        background: #ff00ff;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
