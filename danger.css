@@ -12,12 +12,6 @@ html, body {
     animation: glitchScreen 0.1s infinite;
 }
 
-#error {
-    position: fixed;
-    inset: 0;
-    z-index: 100;
-    animation: glitchScreen 0.1s infinite;
-}
 
 @keyframes glitchScreen {
     0%   { background: red; }
@@ -32,10 +26,10 @@ html, body {
 
 
 .hack {
-    background: #000 !important;
-    color: #00ff00 !important;
-    font-family: "Courier New", monospace !important;
-    font-size: 18px !important;
+    background: #000;
+    color: #00ff00;
+    font-family: "Courier New";
+    font-size: 18px;
     text-shadow: 0 0 5px #00ff00,
                  0 0 10px #00ff00;
     overflow: hidden;
