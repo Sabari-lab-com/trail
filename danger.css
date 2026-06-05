@@ -1,39 +1,18 @@
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    mix-blend-mode: screen;
-    animation: screen-fault 5s infinite;
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    animation: glitchScreen 0.1s infinite;
 }
 
-@keyframes screen-fault {
-    0%, 94% {
-        opacity: 0;
-    }
-
-    95% {
-        opacity: 1;
-        background: #ff0000;
-    }
-
-    96% {
-        background: #00ff00;
-    }
-
-    97% {
-        background: #0000ff;
-    }
-
-    98% {
-        background: #ffffff;
-    }
-
-    99% {
-        background: #ff00ff;
-    }
-
-    100% {
-        opacity: 0;
-    }
+@keyframes glitchScreen {
+    0%   { background: red; }
+    16%  { background: lime; }
+    32%  { background: blue; }
+    48%  { background: yellow; }
+    64%  { background: magenta; }
+    80%  { background: cyan; }
+    100% { background: white; }
 }
+
