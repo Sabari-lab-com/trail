@@ -1,4 +1,4 @@
-.blink {
+#error {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -15,7 +15,7 @@
     100% { background: white; }
 }
 
-.blink {
+#error {
     position: absolute;
     height: 100%;
     width: 100%;
