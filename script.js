@@ -4,5 +4,5 @@ const text = document.querySelector('.typing-text');
 
         text.style.width = len + 'ch';
         text.style.animation =
-            `typing 3s steps(${len}) ,
+            `typing ${Math.round(len/6)}s steps(${len}) ,
             blink .5s infinite alternate`;
